@@ -52,7 +52,7 @@ set ${nic}/ip ${ip}
 set ${nic}/netmask ${netmask}
 set ${nic}/gateway ${gateway}
 set ${nic}/dns ${dns}
-set ip-param ip=${ip}::${gateway}:${netmask}::::none nameserver=${dns}
+set ip-param ip=${ip}::${gateway}:${netmask}:::none nameserver=${dns}
 goto boot
 
 :boot
